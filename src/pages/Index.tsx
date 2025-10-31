@@ -157,8 +157,7 @@ const Index = () => {
                     </p>
                     <p className="text-muted-foreground leading-relaxed">He bring a rich experience of building loyalty programs across e-commerce, travel, hospitality, financial services, retail, health.
 
-
-Ketan is Certified Loyalty Marketing Professional (CLMP) and recognizzed as </p>
+Ketan is Certified Loyalty Marketing Professional (CLMP) and has been recognized as "30 under 40 Loyalty Leaders" by International Loyalty Awards.</p>
                   </div>
                 </div>
               </CardContent>
