@@ -61,12 +61,8 @@ const Index = () => {
               Expert consulting to help you build compelling loyalty programs that increase retention, revenue, and customer frequency.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-secondary hover:opacity-90 text-secondary-foreground shadow-lg">
-                Explore Our Services
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Learn More
-              </Button>
+              
+              
             </div>
           </div>
         </div>
@@ -149,11 +145,7 @@ const Index = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                   <div className="flex-shrink-0">
-                    <img 
-                      src={founderPhoto} 
-                      alt="Ketan Phanse - Founder, K10 Advisors" 
-                      className="w-64 h-64 object-cover rounded-full shadow-lg"
-                    />
+                    <img src={founderPhoto} alt="Ketan Phanse - Founder, K10 Advisors" className="w-64 h-64 object-cover rounded-full shadow-lg" />
                   </div>
                   <div className="flex-1 space-y-4">
                     <h4 className="text-2xl font-bold text-foreground">Ketan Phanse</h4>
@@ -163,9 +155,10 @@ const Index = () => {
                     <p className="text-muted-foreground leading-relaxed">
                       He was the Product Head for Tata Group's NeuPass program - one of India's largest coalition loyalty program integrating diverse portfolio 15+ Tata group companies with 100Mn+ user base.
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      He bring a rich experience of building loyalty programs across e-commerce, travel, hospitality, financial services, retail, health.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">He bring a rich experience of building loyalty programs across e-commerce, travel, hospitality, financial services, retail, health.
+
+
+Ketan is Certified Loyalty Marketing Professional (CLMP) and recognizzed as </p>
                   </div>
                 </div>
               </CardContent>
