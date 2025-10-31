@@ -3,66 +3,42 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Target, Zap, Cpu, Wrench } from "lucide-react";
 import heroImage from "@/assets/hero-loyalty.jpg";
 import logoImage from "@/assets/k10-logo.png";
-
 const Index = () => {
-  const services = [
-    {
-      icon: Target,
-      title: "Loyalty Program Strategy",
-      points: [
-        "Strategic design of loyalty programs tailored to your business objectives and customer behavior",
-        "Expert guidance on tier structures, reward mechanisms, and points economics",
-        "Development of compelling promotional strategies to drive engagement and retention",
-        "Competitive analysis and benchmarking against industry best practices"
-      ]
-    },
-    {
-      icon: Zap,
-      title: "Engagement with Loyalty",
-      points: [
-        "Design and implementation of gamification elements to boost customer participation",
-        "Creation of interactive challenges, badges, and achievement systems",
-        "Development of personalized engagement campaigns based on customer segments",
-        "Optimization of communication strategies across email, mobile, and in-app channels"
-      ]
-    },
-    {
-      icon: Wrench,
-      title: "Technology Advisory",
-      points: [
-        "Seamless migration from legacy platforms to modern loyalty technology solutions",
-        "Integration of loyalty programs across web, mobile apps, and in-store experiences",
-        "Development of robust data architectures to support analytics and personalization",
-        "Evaluation and selection of loyalty platform vendors aligned with your requirements"
-      ]
-    },
-    {
-      icon: Cpu,
-      title: "AI Loyalty",
-      points: [
-        "Implementation of AI-powered promotion engines for dynamic, personalized offers",
-        "Development of intelligent chatbots for 24/7 loyalty customer support",
-        "Advanced predictive analytics to identify churn risks and growth opportunities",
-        "Machine learning models for customer lifetime value prediction and segmentation"
-      ]
-    }
-  ];
-
-  const benefits = [
-    { title: "Increase Retention", description: "Build lasting relationships with your customers" },
-    { title: "Increase Revenue", description: "Drive sustainable growth through loyalty" },
-    { title: "Increase Frequency", description: "Encourage repeat purchases and engagement" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const services = [{
+    icon: Target,
+    title: "Loyalty Program Strategy",
+    points: ["Strategic design of loyalty programs tailored to your business objectives and customer behavior", "Expert guidance on tier structures, reward mechanisms, and points economics", "Development of compelling promotional strategies to drive engagement and retention", "Competitive analysis and benchmarking against industry best practices"]
+  }, {
+    icon: Zap,
+    title: "Engagement with Loyalty",
+    points: ["Design and implementation of gamification elements to boost customer participation", "Creation of interactive challenges, badges, and achievement systems", "Development of personalized engagement campaigns based on customer segments", "Optimization of communication strategies across email, mobile, and in-app channels"]
+  }, {
+    icon: Wrench,
+    title: "Technology Advisory",
+    points: ["Seamless migration from legacy platforms to modern loyalty technology solutions", "Integration of loyalty programs across web, mobile apps, and in-store experiences", "Development of robust data architectures to support analytics and personalization", "Evaluation and selection of loyalty platform vendors aligned with your requirements"]
+  }, {
+    icon: Cpu,
+    title: "AI Loyalty",
+    points: ["Implementation of AI-powered promotion engines for dynamic, personalized offers", "Development of intelligent chatbots for 24/7 loyalty customer support", "Advanced predictive analytics to identify churn risks and growth opportunities", "Machine learning models for customer lifetime value prediction and segmentation"]
+  }];
+  const benefits = [{
+    title: "Increase Retention",
+    description: "Build lasting relationships with your customers"
+  }, {
+    title: "Increase Revenue",
+    description: "Drive sustainable growth through loyalty"
+  }, {
+    title: "Increase Frequency",
+    description: "Encourage repeat purchases and engagement"
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src={logoImage} alt="K10 Advisors Logo" className="w-10 h-10" />
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">K10 Advisors</h1>
+              <img src={logoImage} alt="K10 Advisors Logo" className="w-20 h-20" />
+              <h1 className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent text-left text-3xl font-bold">K10 Advisors</h1>
             </div>
             <Button variant="default" className="bg-gradient-to-r from-primary via-primary-light to-secondary hover:opacity-90">
               Get in Touch
@@ -74,11 +50,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary opacity-95" />
-        <img 
-          src={heroImage} 
-          alt="K10 Advisors - Loyalty Strategy Consulting" 
-          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20"
-        />
+        <img src={heroImage} alt="K10 Advisors - Loyalty Strategy Consulting" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20" />
         <div className="relative container mx-auto px-6 py-20 lg:py-28">
           <div className="max-w-3xl animate-fade-in">
             <h2 className="text-5xl lg:text-6xl font-bold text-primary-foreground mb-5 leading-tight">
@@ -111,19 +83,15 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div 
-                key={index}
-                className="text-center p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow duration-300 animate-scale-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {benefits.map((benefit, index) => <div key={index} className="text-center p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow duration-300 animate-scale-in" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <div className="w-14 h-14 bg-gradient-to-br from-secondary to-accent rounded-full mx-auto mb-3 flex items-center justify-center">
                   <div className="w-7 h-7 bg-secondary-foreground rounded-full" />
                 </div>
                 <h4 className="text-xl font-semibold text-foreground mb-2">{benefit.title}</h4>
                 <p className="text-muted-foreground">{benefit.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -140,12 +108,9 @@ const Index = () => {
             </p>
           </div>
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
-            {services.map((service, index) => (
-              <Card 
-                key={index} 
-                className="border-border hover:border-primary-light transition-all duration-300 hover:shadow-xl animate-scale-in group"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {services.map((service, index) => <Card key={index} className="border-border hover:border-primary-light transition-all duration-300 hover:shadow-xl animate-scale-in group" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary via-primary-light to-secondary rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -154,18 +119,15 @@ const Index = () => {
                     <div className="flex-1">
                       <h4 className="text-2xl font-semibold text-foreground mb-3">{service.title}</h4>
                       <ul className="space-y-2">
-                        {service.points.map((point, pointIndex) => (
-                          <li key={pointIndex} className="text-muted-foreground leading-relaxed flex items-start gap-2">
+                        {service.points.map((point, pointIndex) => <li key={pointIndex} className="text-muted-foreground leading-relaxed flex items-start gap-2">
                             <span className="text-primary mt-1">•</span>
                             <span>{point}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -215,8 +177,6 @@ const Index = () => {
           <p className="text-sm opacity-90">© 2025 K10 Advisors. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
