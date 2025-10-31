@@ -56,16 +56,10 @@ const Index = () => {
             <h2 className="text-5xl lg:text-6xl font-bold text-primary-foreground mb-5 leading-tight">
               Design Loyalty Strategies That Drive Results
             </h2>
-            <p className="text-xl text-primary-foreground/90 mb-6 leading-relaxed">
-              Expert consulting to help you build compelling loyalty programs that increase retention, revenue, and customer frequency.
-            </p>
+            <p className="text-xl text-primary-foreground/90 mb-6 leading-relaxed">Simplifying Loyalty program and promotions with focus on increasing customer retention, revenue, and frequency.</p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-secondary hover:opacity-90 text-secondary-foreground shadow-lg">
-                Explore Our Services
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Learn More
-              </Button>
+              
+              
             </div>
           </div>
         </div>
