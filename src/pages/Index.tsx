@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Target, Zap, Cpu, Wrench } from "lucide-react";
 import heroImage from "@/assets/hero-loyalty.jpg";
 import logoImage from "@/assets/k10-logo.png";
+import founderPhoto from "@/assets/founder-photo.jpg";
 const Index = () => {
   const services = [{
     icon: Target,
@@ -132,22 +133,40 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Founder Section - Empty for now */}
+      {/* Founder Section */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-10">
             <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-3">
-              About the Founder
+              Meet the Founder
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Meet Ketan Phanse
+              Leadership with proven expertise in loyalty
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <Card className="border-border">
+            <Card className="border-border hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8">
-                <div className="text-center text-muted-foreground">
-                  <p className="text-lg">Content coming soon...</p>
+                <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={founderPhoto} 
+                      alt="Ketan Phanse - Founder, K10 Advisors" 
+                      className="w-64 h-64 object-cover rounded-full shadow-lg"
+                    />
+                  </div>
+                  <div className="flex-1 space-y-4">
+                    <h4 className="text-2xl font-bold text-foreground">Ketan Phanse</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Ketan Phanse brings a deep expertise on developing engaging loyalty programs and promotions that deliver tangible business impact. With his past experience as Product Leader at Tata Digital, Jet Privilege, EY, he brings to table a practical, executable approach for loyalty that reduces go to market from months to days.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      He was the Product Head for Tata Group's NeuPass program - one of India's largest coalition loyalty program integrating diverse portfolio 15+ Tata group companies with 100Mn+ user base.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      He bring a rich experience of building loyalty programs across e-commerce, travel, hospitality, financial services, retail, health.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
