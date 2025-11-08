@@ -39,7 +39,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img src={logoImage} alt="K10 Advisors Logo" className="w-20 h-20" />
-              <h1 className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent text-left text-3xl font-bold">K10 Advisors</h1>
+              <h1 className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent text-left text-3xl font-bold font-montserrat">K10 Advisors</h1>
             </div>
             <Button variant="default" className="bg-gradient-to-r from-primary via-primary-light to-secondary hover:opacity-90">
               Get in Touch
