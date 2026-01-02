@@ -174,7 +174,11 @@ Ketan is Certified Loyalty Marketing Professional (CLMP) and has been recognized
           <p className="text-xl text-primary-foreground/90 mb-6 max-w-2xl mx-auto">
             Let's discuss how we can help you build a loyalty program that drives real business results.
           </p>
-          <Button size="lg" className="bg-background text-foreground hover:bg-background/90 shadow-lg">
+          <Button 
+            size="lg" 
+            className="bg-background text-foreground hover:bg-background/90 shadow-lg"
+            onClick={() => window.location.href = 'mailto:ketan.phanse@k10advisors.in?subject=Consultation Request'}
+          >
             Schedule a Consultation
           </Button>
         </div>
