@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
+        heading: ["'Instrument Serif'", "serif"],
+        body: ["'Barlow'", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
