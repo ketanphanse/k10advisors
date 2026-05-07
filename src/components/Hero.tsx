@@ -62,11 +62,11 @@ export const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover object-bottom"
       />
 
-      <nav className="relative z-20 px-6 py-6">
-        <div className="liquid-glass rounded-full max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center">
-            <Globe className="w-6 h-6 text-white" />
-            <span className="ml-3 text-white font-semibold text-lg">K10 Advisors</span>
+      <nav className="relative z-20 px-3 sm:px-6 py-4 sm:py-6">
+        <div className="liquid-glass rounded-full max-w-5xl mx-auto pl-4 pr-2 sm:px-6 py-2 sm:py-3 flex items-center justify-between gap-2">
+          <div className="flex items-center min-w-0">
+            <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-white shrink-0" />
+            <span className="ml-2 sm:ml-3 text-white font-semibold text-base sm:text-lg truncate">K10 Advisors</span>
             <div className="hidden md:flex gap-8 ml-8">
               <a href="#services" className="text-white/80 hover:text-white text-sm font-medium">Services</a>
               <a href="#founder" className="text-white/80 hover:text-white text-sm font-medium">Founder</a>
@@ -74,21 +74,23 @@ export const Hero = () => {
             </div>
           </div>
           <LiquidButton
+            className="shrink-0 !px-3 !py-2 !text-xs sm:!px-5 sm:!py-2.5 sm:!text-sm"
             onClick={() => (window.location.href = "mailto:ketan.phanse@k10advisors.in?subject=Consultation Request")}
           >
-            Schedule a Consultation
+            <span className="hidden sm:inline">Schedule a Consultation</span>
+            <span className="sm:hidden">Consult</span>
           </LiquidButton>
         </div>
       </nav>
 
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-12 text-center -translate-y-[20%]">
         <h1
-          className="text-7xl md:text-8xl lg:text-9xl text-white tracking-tight whitespace-nowrap"
+          className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-tight"
           style={{ fontFamily: "'Instrument Serif', serif" }}
         >
           Loyalty, reimagined.
         </h1>
-        <p className="mt-8 max-w-xl text-white text-sm leading-relaxed px-4">
+        <p className="mt-6 sm:mt-8 max-w-xl text-white text-sm leading-relaxed px-4">
           Expert consulting to help you build compelling loyalty programs that increase retention,
           revenue, and customer frequency.
         </p>
