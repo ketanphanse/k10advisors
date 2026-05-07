@@ -8,7 +8,7 @@ export const PhilosophySection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
-        className="text-5xl md:text-7xl lg:text-8xl text-white tracking-tight mb-16 md:mb-24"
+        className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tight mb-12 sm:mb-16 md:mb-24"
       >
         Strategy <span className="font-serif-italic text-white/40">x</span> Loyalty
       </motion.h2>

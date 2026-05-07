@@ -13,13 +13,13 @@ const CardVideo = ({ src }: { src: string }) => (
 
 export const OurServices = () => {
   return (
-    <section id="services" className="min-h-screen bg-black px-6 py-16 md:px-12 lg:px-20">
+    <section id="services" className="min-h-screen bg-black px-5 sm:px-6 py-16 md:px-12 lg:px-20">
       <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
         <div>
-          <h2 className="text-2xl md:text-4xl lg:text-[2.75rem] font-normal tracking-tight text-white leading-tight">
+          <h2 className="text-[1.65rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] font-normal tracking-tight text-white leading-tight">
             Strategies built for brands<br />that want lasting loyalty.
           </h2>
-          <h3 className="text-2xl md:text-4xl lg:text-[2.75rem] font-normal tracking-tight text-white/40 mt-2 leading-tight">
+          <h3 className="text-[1.65rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] font-normal tracking-tight text-white/40 mt-2 leading-tight">
             Designed with rigor. Powered by AI.
           </h3>
         </div>
@@ -34,7 +34,7 @@ export const OurServices = () => {
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:grid-rows-2">
         {/* Card 01 */}
-        <div className="feature-card md:row-span-2 min-h-[28rem] p-7 flex flex-col">
+        <div className="feature-card md:row-span-2 min-h-[26rem] sm:min-h-[28rem] p-6 sm:p-7 flex flex-col">
           <CardVideo src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260427_104605_2700410c-4303-4d44-a368-e1b8c84eca8c.mp4" />
           <div className="relative flex justify-between text-sm text-white/60">
             <span>01/</span>

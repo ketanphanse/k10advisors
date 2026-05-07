@@ -24,7 +24,7 @@ export const AboutSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-7xl text-white leading-[1.1] tracking-tight"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white leading-[1.15] tracking-tight"
         >
           <span className="font-serif-italic text-white/60">Pioneering loyalty</span> for
           <br className="hidden md:block" />{" "}
