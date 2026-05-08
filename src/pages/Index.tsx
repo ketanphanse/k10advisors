@@ -3,7 +3,6 @@ import { OurServices } from "@/components/OurServices";
 import { AboutSection } from "@/components/AboutSection";
 import { FeaturedVideoSection } from "@/components/FeaturedVideoSection";
 import { PhilosophySection } from "@/components/PhilosophySection";
-import { ServicesSection } from "@/components/ServicesSection";
 import { Founder } from "@/components/Founder";
 
 const Index = () => (
@@ -13,7 +12,6 @@ const Index = () => (
     <AboutSection />
     <FeaturedVideoSection />
     <PhilosophySection />
-    <ServicesSection />
     <Founder />
     <footer className="bg-black border-t border-white/10 py-8 px-6 text-center">
       <p className="text-white/40 text-xs tracking-widest uppercase">
