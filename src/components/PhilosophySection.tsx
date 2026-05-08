@@ -28,7 +28,7 @@ export const PhilosophySection = () => (
         transition={{ duration: 0.8 }}
         className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tight mb-8"
       >
-        Strategy <span className="font-serif-italic text-white/40">x</span> Loyalty
+        Strategy <span className="font-serif-italic text-white/40">x</span> Execution
       </motion.h2>
 
       <motion.p
