@@ -90,7 +90,7 @@ export const Hero = () => {
         >
           Loyalty, reimagined.
         </h1>
-        <p className="mt-6 sm:mt-8 max-w-xl text-white text-sm leading-relaxed px-4">
+        <p className="mt-6 sm:mt-8 max-w-2xl text-white text-base sm:text-lg md:text-xl leading-relaxed px-4">
           Expert consulting to help you build compelling loyalty programs that increase retention,
           revenue, and customer frequency.
         </p>
