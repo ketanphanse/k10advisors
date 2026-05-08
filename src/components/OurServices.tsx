@@ -63,7 +63,7 @@ export const OurServices = () => {
             <span className="text-sm md:text-base text-white/60 shrink-0">02/</span>
           </div>
           <div className="relative flex-1 min-h-24 md:min-h-48" />
-          <p className="relative text-xs text-white/70 max-w-md leading-relaxed">
+          <p className="relative text-sm md:text-base text-white/75 max-w-md leading-relaxed">
             Gamification, challenges, badges, and personalized campaigns across email, mobile,
             and in-app — all tuned to your customer segments.
           </p>
